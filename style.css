@@ -1,7 +1,7 @@
 /* Base layout */
 body {
   margin: 0;
-  padding: 0;
+  padding: 2em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: #fff;
   color: #222;
@@ -9,7 +9,6 @@ body {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2em;
 }
 
 /* NAVIGATION */
@@ -18,7 +17,7 @@ nav.navbar {
   top: 0;
   background: #fff;
   border-bottom: 1px solid #ddd;
-  padding: 0.8em 0;
+  padding-bottom: 0.6em;
   z-index: 10;
 }
 
@@ -33,16 +32,18 @@ nav.navbar {
   user-select: none;
 }
 
+/* IMPORTANT: hidden by default */
 .nav-list {
   list-style: none;
   padding: 0;
+  margin: 0.6em 0 0 0;
   display: none;
   flex-direction: column;
+  align-items: center;
   gap: 0.6em;
-  margin-top: 0.6em;
-  text-align: center;
 }
 
+/* Only visible after click */
 .nav-list.active {
   display: flex;
 }
@@ -52,6 +53,7 @@ nav.navbar {
   color: #0055aa;
   font-size: 1.1em;
 }
+
 .nav-list a:hover {
   text-decoration: underline;
 }
@@ -72,50 +74,48 @@ nav.navbar {
 }
 
 h1 {
-  margin-bottom: 0.2em;
   font-size: 2em;
+  margin-bottom: 0.3em;
 }
 
 .intro {
-  font-size: 1.1em;
-  margin-bottom: 1em;
-}
-
-.interests {
-  list-style: none;
-  padding: 0;
+  font-size: 1.05em;
   margin-bottom: 1.4em;
 }
 
+/* Interests */
+.interests {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.6em;
+}
+
 .interests li {
-  font-size: 1.05em;
   margin: 0.4em 0;
 }
 
-/* ICON LINKS */
+/* Icons */
 .icon-links {
   display: flex;
   justify-content: center;
   gap: 1.5em;
-  margin-top: 1em;
   margin-bottom: 2em;
 }
 
 .icon {
   width: 32px;
   height: 32px;
-  filter: grayscale(40%);
-  transition: filter 0.2s;
+  transition: opacity 0.2s;
 }
 
 .icon:hover {
-  filter: none;
+  opacity: 0.7;
 }
 
-/* BLOG & PROJECTS */
+/* Sections */
 section h2 {
-  font-size: 1.6em;
   margin-top: 2em;
+  font-size: 1.6em;
   border-bottom: 2px solid #ddd;
   padding-bottom: 0.4em;
 }
