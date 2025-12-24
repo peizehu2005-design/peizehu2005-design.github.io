@@ -136,15 +136,4 @@ main {
 
 .project-title {
   margin-bottom: 0.2rem;
-}
 
-.project-date {
-  font-weight: 600;        /* bold */
-  margin-bottom: 0.8rem;
-}
-
-.project-divider {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin-bottom: 1.5rem;
-}
