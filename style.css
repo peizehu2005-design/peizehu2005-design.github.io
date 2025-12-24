@@ -119,3 +119,17 @@ section h2 {
   border-bottom: 2px solid #ddd;
   padding-bottom: 0.4em;
 }
+
+main {
+  max-width: 720px;        /* controls text column width */
+  margin: 3rem auto;       /* center on page */
+  padding: 0 1rem;
+}
+
+.project-images img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;     /* center image */
+  border-radius: 8px;
+}
